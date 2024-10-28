@@ -1,6 +1,6 @@
-CitizenLens: CDF Project Feedback System 
+#CitizenLense: CDF Project Feedback System 
 
-CITIZENLENS is a sentiment analysis project. It allows users to view the sentiments of a constituency based on the completion of CDF projects. After receiving input from users through a USSD code:
+CitizenLense is a sentiment analysis project. It allows users to view the sentiments of a constituency based on the completion of CDF projects. After receiving input from users through a USSD code:
 		
 	  * 789 *9085635#
 This input is taken through a sentiment analysis model that processes the text data and outputs the result of the analyzed sentiment into a webpage. 
@@ -68,8 +68,7 @@ Make sure you have the following installed:
 INSTALLATION
 
 	1. Clone the Repository
-	First, clone this repository to your local machine: git clone https://github.com/angelakinoro/KamiLimu-Sentiment_Analysis
-	
+	First, clone this repository to your local machine: git clone https://github.com/CitizenLense/Pilot
 	2. Navigate into the project directory: cd project
 	Create a Virtual Environment:
 		python3 -m venv venv
