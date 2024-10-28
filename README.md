@@ -122,5 +122,4 @@ If you'd like to contribute to this project, please open a pull request or conta
 License: 
 This project is licensed under the MIT License.
 
-Slides: 
-https://www.canva.com/design/DAGQNMhJrT4/xdDyT0q-Lix4_FLIKvMV4A/edit?utm_content=DAGQNMhJrT4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Slides: (https://www.canva.com/design/DAGU4pyCls4/1BEE9iVSy7xvv1_Tlw93Ow/edit)
