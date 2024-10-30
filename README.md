@@ -16,30 +16,30 @@ gkkaranja2@gmail.com
 Angela Kinoro
 angela.kinoro@riarauniversity.ac.keq
 
-
+![Citizen_lens_1 drawio](https://github.com/user-attachments/assets/0da1db30-034c-41f8-b119-9b178996285c)
 
 
   
 PROJECT STRUCTURE   USSD ->  MODEL -> WEBPAGE
 
 
-	PROJECT STRUCTURE 
-	
-	project/
-	│
-	├── webpage                        # The main file to run your Flask app
-  |         ___ app.py       
-	├── models/                        # Directory for machine learning models	
-	          └── sentiment_model.py   # Sentiment prediction logic	
-	├── database/                      # Directory for database-related operations	
-	          └── db_operations.py     # Database connection and queries	
-	          └── db_script.sql        # Database connection and queries	
-            ___ config.py
-	├── routes/                        # Directory for Flask route handlers	
-	          └── ussd_routes.py       # USSD routes	
-	└── utils/                         # Utility functions	
-	          └── helpers.py   
-	
+		PROJECT STRUCTURE 
+		
+		project/
+		│
+		├── webpage                        # The main file to run your Flask app
+	  |         ___ app.py       
+		├── models/                        # Directory for machine learning models	
+		          └── sentiment_model.py   # Sentiment prediction logic	
+		├── database/                      # Directory for database-related operations	
+		          └── db_operations.py     # Database connection and queries	
+		          └── db_script.sql        # Database connection and queries	
+	            ___ config.py
+		├── routes/                        # Directory for Flask route handlers	
+		          └── ussd_routes.py       # USSD routes	
+		└── utils/                         # Utility functions	
+		          └── helpers.py   
+		
 
      
 FEATURES
