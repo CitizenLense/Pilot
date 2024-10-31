@@ -36,10 +36,10 @@ def ussd_callback():
 
     if text == '':
         # Main Menu
-        response = "CON Welcome to CitizenLens!\n"
-        response += "1. Share Your Thoughts on CDF Projects\n"
-        response += "2. Learn More About CitizenLens\n"
-        response += "3. Exit"
+        response = "CON Welcome to CitizenLens!🎊\n"
+        response += "1. Share Your Thoughts on CDF Projects🤔\n"
+        response += "2. Learn More About CitizenLens📝\n"
+        response += "3. Exit👋🏽"
 
     elif user_input[0] == '1':
         # Step 1: Select Constituency (only showing Mathare)
@@ -54,17 +54,17 @@ def ussd_callback():
                 if projects:
                     response = "CON Select a Project:\n"
                     for index, project in enumerate(projects):
-                        response += f"{index + 1}. {project[1]}\n"
+                        response += f"{index + 1}. {project[1]}📜\n"
                 else:
-                    response = "END No projects available for Mathare at the moment.\n"
+                    response = "END No projects available for Mathare at the moment.🚫\n"
         
         # Step 3: Select Project State
         elif len(user_input) == 3:
             response = "CON What is the current state of the project?\n"
-            response += "1. Completed\n"
-            response += "2. In Progress\n"
-            response += "3. Stalled\n"
-            response += "4. Never Started\n"
+            response += "1. Completed🎉\n"
+            response += "2. In Progress📩\n"
+            response += "3. Stalled⏳\n"
+            response += "4. Never Started✖️\n"
         
         # Step 4: How has this project impacted the community?
         elif len(user_input) == 4:
@@ -73,18 +73,18 @@ def ussd_callback():
         # Step 5: Biggest Issue with the Project
         elif len(user_input) == 5:
             response = "CON What is the biggest issue with this project?\n"
-            response += "1. Poor workmanship\n"
-            response += "2. Lack of funds\n"
-            response += "3. Poor planning\n"
-            response += "4. Corruption/mismanagement\n"
-            response += "5. Other (Type your response)\n"
+            response += "1. Poor workmanship💩\n"
+            response += "2. Lack of funds💰\n"
+            response += "3. Poor planning🌐\n"
+            response += "4. Corruption/mismanagement💀\n"
+            response += "5. Other (Type your response)⌨️\n"
         
         # Step 6: How Urgent is the Completion of this Project?
         elif len(user_input) == 6:
             response = "CON How urgent is the completion of this project?\n"
-            response += "1. Extremely Urgent\n"
-            response += "2. Urgent\n"
-            response += "3. Not Urgent\n"
+            response += "1. Extremely Urgent🔥\n"
+            response += "2. Urgent♨️\n"
+            response += "3. Not Urgent☁️\n"
         
         # Final Step: Confirmation and Save Data
         elif len(user_input) == 7:
@@ -120,6 +120,6 @@ def ussd_callback():
         response = "END Thank you for using our service."
 
     else:
-        response = "END Invalid input. Please try again."
+        response = "END Invalid input. Please try again.🚫"
 
     return Response(response, mimetype="text/plain")
