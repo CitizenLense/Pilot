@@ -1,0 +1,8 @@
+dash #for building the front-end
+flask #for API development
+pandas #for data manipulation
+plotly #for data visualizations
+requests #for API requests
+psycopg2-binary #for PostgreSQL connection    
+
+
