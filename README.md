@@ -5,7 +5,12 @@ CitizenLense is a sentiment analysis project. It allows users to view the sentim
 	  * 789 *9085635#
 This input is taken through a sentiment analysis model that processes the text data and outputs the result of the analyzed sentiment into a webpage. 
 
-The authors are: 
+## USSD Access (Demo Only)  
+⚠ **Note:** The USSD code was used for demo purposes and is currently **not active**.  
+If a new USSD code becomes available, we will update this section accordingly.
+
+
+## The authors are: 
 
 Rachael Kibicho 
 rachaelkibicho@gmail.com 
@@ -14,13 +19,13 @@ George Karanja
 gkkaranja2@gmail.com
 
 Angela Kinoro
-angela.kinoro@riarauniversity.ac.keq
+kinoroangela29@gmail.com
 
 ![Citizen_lens_1 drawio](https://github.com/user-attachments/assets/0da1db30-034c-41f8-b119-9b178996285c)
 
 
   
-PROJECT STRUCTURE   USSD ->  MODEL -> WEBPAGE
+## PROJECT STRUCTURE   USSD ->  MODEL -> WEBPAGE
 
 
 		PROJECT STRUCTURE 
@@ -42,17 +47,17 @@ PROJECT STRUCTURE   USSD ->  MODEL -> WEBPAGE
 		
 
      
-FEATURES
+## FEATURES
 
 	- USSD Integration: Allows users to share feedback via USSD.
 	- Database: Uses PostgreSQL to store project details and user feedback.
-	- Sentiment Analysis: Leverages a fine-tuned DistilBERT model to analyze the sentiment of feedback.
+	- Sentiment Analysis: Leverages a fine-tuned DistilBERT model to analyze the feedback sentiment.
 	- Dynamic Menus: Provides a USSD menu where users select constituency, project, project state, and urgency.
 	- Webpage that displays aggregated sentiments for particular projects
 	
 
 
-GETTING STARTED
+## GETTING STARTED
 Prerequisites
 
 Make sure you have the following installed:
@@ -65,7 +70,7 @@ Make sure you have the following installed:
 
 
 
-INSTALLATION
+## INSTALLATION
 
 	1. Clone the Repository
 	First, clone this repository to your local machine: git clone https://github.com/CitizenLense/Pilot
@@ -81,12 +86,12 @@ INSTALLATION
 	Create the required tables (Find the schema in the folder database/ db_script.sql):
 
 
-RUNNING THE APPLCATION 
+## RUNNING THE APPLICATION 
 
 
 	- Start the Flask App: python app.py
 	The app should now be running on http://127.0.0.1:5000.	
-	- Expose to the Internet (for USSD):
+	- Exposed to the Internet (for USSD):
 	Use Ngrok to expose the local server: ngrok http 5000
 	Take note of the Ngrok URL (e.g., http://<ngrok-id>.ngrok.io) and update your USSD service provider's callback URL to point to http://<ngrok-id>.ngrok.io/ussd.	
 	- Interacting with the Application
@@ -95,19 +100,39 @@ RUNNING THE APPLCATION
 
 FOR THE WEBPAGE 
 
-	Tailwind + React Project with Vite
-	Ensure Dependencies are Installed: cretae a virtual environment (.venv), make sure you have all the required Node.js packages installed.
-		
-	Run: npm install
-	This will ensure that all dependencies and devDependencies listed in package.json are installed locally in the node_modules directory.
-	
-	Run the Development Server: Now that the dependencies are installed, you can start the development server using the command in the scripts section of your package.json:
-	
-	npm run dev
-	This should start the Vite development server and compile your React and Tailwind CSS code.
-	
-	Check the Console Output: After running the command, the console will give you the local URL where your app is being served, likely something like:
-	Local: http://localhost:5173/
+	## Installation
+
+### Prerequisites
+Ensure you have **Python 3.7+** installed.  
+Install virtual environment (optional but recommended):
+
+```bash
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate  # Windows
+```
+
+### Install Dependencies
+Run the following command to install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+If you don’t have a `requirements.txt`, you can manually install Dash:
+
+```bash
+pip install dash pandas plotly
+```
+
+## Running the App
+To start the Dash server, run:
+
+```bash
+python app.py
+```
+
+By default, the app will be accessible at **`http://127.0.0.1:8050/`**.
 
 Model Information
 
@@ -116,10 +141,10 @@ Model Information
  
 
 
-Contributing: 
+## Contributing: 
 If you'd like to contribute to this project, please open a pull request or contact either of us.
 
-License: 
+## License: 
 This project is licensed under the MIT License.
 
 Slides: (https://www.canva.com/design/DAGU4pyCls4/1BEE9iVSy7xvv1_Tlw93Ow/edit?utm_content=DAGU4pyCls4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
